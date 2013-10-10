@@ -40,6 +40,19 @@
             "comment": "Comment line"
         },
 
+
+        {
+            "match": "(?i)\\b([\\w|\\d]*)\\:",
+            "name": "string.asm",
+            "comment": "Jump label"
+        },
+
+    //    {
+    //        "match": "(?i)\\.([\\w|\\d]*)\\b",
+    //        "name": "variable.macro.asm",
+    //        "comment": "."
+    //    },    
+    
         {
             "match": "(^|\\s)\"[\\w\\s\\W]*\"($|\\s)",
             "name": "string.asm",

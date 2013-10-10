@@ -60,6 +60,14 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Jump label</string>
+			<key>match</key>
+			<string>(?i)\b([\w|\d]*)\:</string>
+			<key>name</key>
+			<string>string.asm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Single-line string</string>
 			<key>match</key>
 			<string>(^|\s)"[\w\s\W]*"($|\s)</string>

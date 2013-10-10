@@ -59,16 +59,6 @@
 			<string>comment.line.asm</string>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>(/\*)</string>
-			<key>comment</key>
-			<string>C-style comment block (AVR ASM 2.0 only)</string>
-			<key>end</key>
-			<string>(\*/)</string>
-			<key>name</key>
-			<string>comment.block.asm</string>
-		</dict>
-		<dict>
 			<key>comment</key>
 			<string>Single-line string</string>
 			<key>match</key>
@@ -88,7 +78,7 @@
 			<key>comment</key>
 			<string>Hex number constant</string>
 			<key>match</key>
-			<string>(?i)\b($(\d|[A-F])+)\b</string>
+			<string>(?i)\$((\d|[A-F])+)\b</string>
 			<key>name</key>
 			<string>constant.numeric.asm</string>
 		</dict>
@@ -96,7 +86,7 @@
 			<key>comment</key>
 			<string>Bin number constant</string>
 			<key>match</key>
-			<string>\%(0b(0|1)+)\b</string>
+			<string>(?i)\%(0b(0|1)+)\b</string>
 			<key>name</key>
 			<string>constant.numeric.asm</string>
 		</dict>
@@ -104,7 +94,7 @@
 			<key>comment</key>
 			<string>Dec number constant</string>
 			<key>match</key>
-			<string>\#(0|[1-9]\d+)\b</string>
+			<string>(?i)\#(0|[1-9]\d+)\b</string>
 			<key>name</key>
 			<string>constant.numeric.asm</string>
 		</dict>

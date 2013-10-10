@@ -53,19 +53,19 @@
         },
 
         {
-            "match": "(?i)\\b($(\\d|[A-F])+)\\b",
+            "match": "(?i)\\$((\\d|[A-F])+)\\b",
             "name": "constant.numeric.asm",
             "comment": "Hex number constant"
         },
 
         {
-            "match": "\\b%(0b(0|1)+)\\b",
+            "match": "(?i)\\%(0b(0|1)+)\\b",
             "name": "constant.numeric.asm",
             "comment": "Bin number constant"
         },
 
         {
-            "match": "\\b#(0|[1-9]\\d+)\\b",
+            "match": "(?i)\\#(0|[1-9]\\d+)\\b",
             "name": "constant.numeric.asm",
             "comment": "Dec number constant"
         }

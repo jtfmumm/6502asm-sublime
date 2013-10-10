@@ -86,7 +86,7 @@
 			<key>comment</key>
 			<string>Binary number constant</string>
 			<key>match</key>
-			<string>(?i)\%[0|1]+)\b</string>
+			<string>(?i)\%([0|1]+)\b</string>
 			<key>name</key>
 			<string>constant.numeric.asm</string>
 		</dict>

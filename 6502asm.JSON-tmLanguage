@@ -59,7 +59,7 @@
         },
 
         {
-            "match": "(?i)\\%[0|1]+)\\b",
+            "match": "(?i)\\%([0|1]+)\\b",
             "name": "constant.numeric.asm",
             "comment": "Binary number constant"
         },

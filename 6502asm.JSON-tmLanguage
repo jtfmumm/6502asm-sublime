@@ -6,31 +6,31 @@
  
         {
             "match": "(?i)\\b(adc|and|asl|dec|dex|dey|eor|inc|inx|iny|lsr|ora|rol|ror|sbc)\\b",
-            "name": "keyword.operator.asm",
+            "name": "keyword.arithlogic.asm",
             "comment": "Arithmetic and logic instruction mnemonics"
         },
 
         { 
             "match": "(?i)\\b(bcc|bcs|beq|bmi|bne|bpl|bvc|bvs|jmp|jsr|rti|rts)\\b",
-            "name": "keyword.operator.asm",
+            "name": "keyword.branch.asm",
             "comment": "Branch instruction mnemonics"
         },
 
         { 
             "match": "(?i)\\b(bit|cmp|cpx|cpy)\\b",
-            "name": "keyword.operator.asm",
+            "name": "keyword.compare.asm",
             "comment": "Comparison instructions"
         },
 
         { 
             "match": "(?i)\\b(clc|cld|cli|clv|sec|sed|sei)\\b",
-            "name": "keyword.operator.asm",
+            "name": "keyword.flagset.asm",
             "comment": "Flag setting instructions"
         },
 
         { 
             "match": "(?i)\\b(lda|ldx|ldy|pha|php|pla|plp|sta|stx|sty|tax|tay|tsx|txa|txs|tya)\\b",
-            "name": "keyword.operator.asm",
+            "name": "keyword.transfer.asm",
             "comment": "Load, store, and transfer instructions"
         },
 
@@ -59,15 +59,15 @@
         },
 
         {
-            "match": "(?i)\\%(0b(0|1)+)\\b",
+            "match": "(?i)\\%[0|1]+)\\b",
             "name": "constant.numeric.asm",
-            "comment": "Bin number constant"
+            "comment": "Binary number constant"
         },
 
         {
-            "match": "(?i)\\#(0|[1-9]\\d+)\\b",
+            "match": "(?i)\\#([0-9]+)\\b",
             "name": "constant.numeric.asm",
-            "comment": "Dec number constant"
+            "comment": "Decimal number constant"
         }
 
     ],

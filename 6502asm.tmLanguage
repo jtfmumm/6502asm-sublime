@@ -16,7 +16,7 @@
 			<key>match</key>
 			<string>(?i)\b(adc|and|asl|dec|dex|dey|eor|inc|inx|iny|lsr|ora|rol|ror|sbc)\b</string>
 			<key>name</key>
-			<string>keyword.operator.asm</string>
+			<string>keyword.arithlogic.asm</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -24,7 +24,7 @@
 			<key>match</key>
 			<string>(?i)\b(bcc|bcs|beq|bmi|bne|bpl|bvc|bvs|jmp|jsr|rti|rts)\b</string>
 			<key>name</key>
-			<string>keyword.operator.asm</string>
+			<string>keyword.branch.asm</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -32,7 +32,7 @@
 			<key>match</key>
 			<string>(?i)\b(bit|cmp|cpx|cpy)\b</string>
 			<key>name</key>
-			<string>keyword.operator.asm</string>
+			<string>keyword.compare.asm</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -40,7 +40,7 @@
 			<key>match</key>
 			<string>(?i)\b(clc|cld|cli|clv|sec|sed|sei)\b</string>
 			<key>name</key>
-			<string>keyword.operator.asm</string>
+			<string>keyword.flagset.asm</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -48,7 +48,7 @@
 			<key>match</key>
 			<string>(?i)\b(lda|ldx|ldy|pha|php|pla|plp|sta|stx|sty|tax|tay|tsx|txa|txs|tya)\b</string>
 			<key>name</key>
-			<string>keyword.operator.asm</string>
+			<string>keyword.transfer.asm</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -84,17 +84,17 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Bin number constant</string>
+			<string>Binary number constant</string>
 			<key>match</key>
-			<string>(?i)\%(0b(0|1)+)\b</string>
+			<string>(?i)\%[0|1]+)\b</string>
 			<key>name</key>
 			<string>constant.numeric.asm</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Dec number constant</string>
+			<string>Decimal number constant</string>
 			<key>match</key>
-			<string>(?i)\#(0|[1-9]\d+)\b</string>
+			<string>(?i)\#([0-9]+)\b</string>
 			<key>name</key>
 			<string>constant.numeric.asm</string>
 		</dict>

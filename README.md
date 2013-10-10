@@ -1,7 +1,4 @@
 ## 6502asm-sublime ##
-John Mumm
-
-### Description ###
 
 Syntax definition for 6502 asm for Sublime Text 2.
 

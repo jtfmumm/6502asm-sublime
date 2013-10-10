@@ -41,13 +41,6 @@
         },
 
         {
-            "begin": "(\/\\*)",
-            "end": "(\\*\/)",
-            "name": "comment.block.asm",
-            "comment": "C-style comment block (AVR ASM 2.0 only)"
-        },
-
-        {
             "match": "(^|\\s)\"[\\w\\s\\W]*\"($|\\s)",
             "name": "string.asm",
             "comment": "Single-line string"
@@ -66,13 +59,13 @@
         },
 
         {
-            "match": "\\%(0b(0|1)+)\\b",
+            "match": "\\b%(0b(0|1)+)\\b",
             "name": "constant.numeric.asm",
             "comment": "Bin number constant"
         },
 
         {
-            "match": "\\#(0|[1-9]\\d+)\\b",
+            "match": "\\b#(0|[1-9]\\d+)\\b",
             "name": "constant.numeric.asm",
             "comment": "Dec number constant"
         }

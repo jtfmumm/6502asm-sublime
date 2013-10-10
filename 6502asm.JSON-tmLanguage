@@ -72,7 +72,7 @@
         },
 
         {
-            "match": "\\#^$^%(0|[1-9]\\d+)\\b",
+            "match": "\\#(0|[1-9]\\d+)\\b",
             "name": "constant.numeric.asm",
             "comment": "Dec number constant"
         }

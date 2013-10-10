@@ -104,7 +104,7 @@
 			<key>comment</key>
 			<string>Dec number constant</string>
 			<key>match</key>
-			<string>\#^$^%(0|[1-9]\d+)\b</string>
+			<string>\#(0|[1-9]\d+)\b</string>
 			<key>name</key>
 			<string>constant.numeric.asm</string>
 		</dict>

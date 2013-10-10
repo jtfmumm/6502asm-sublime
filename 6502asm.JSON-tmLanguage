@@ -1,0 +1,83 @@
+{
+	"name": "6502 asm",
+	"scopeName": "source.asm",
+	"fileTypes": ["asm"],
+	"patterns": [
+ 
+        {
+            "match": "(?i)\\b(adc|and|asl|dec|dex|dey|eor|inc|inx|iny|lsr|ora|rol|ror|sbc)\\b",
+            "name": "keyword.operator.asm",
+            "comment": "Arithmetic and logic instruction mnemonics"
+        },
+
+        { 
+            "match": "(?i)\\b(bcc|bcs|beq|bmi|bne|bpl|bvc|bvs|jmp|jsr|rti|rts)\\b",
+            "name": "keyword.operator.asm",
+            "comment": "Branch instruction mnemonics"
+        },
+
+        { 
+            "match": "(?i)\\b(bit|cmp|cpx|cpy)\\b",
+            "name": "keyword.operator.asm",
+            "comment": "Comparison instructions"
+        },
+
+        { 
+            "match": "(?i)\\b(clc|cld|cli|clv|sec|sed|sei)\\b",
+            "name": "keyword.operator.asm",
+            "comment": "Flag setting instructions"
+        },
+
+        { 
+            "match": "(?i)\\b(lda|ldx|ldy|pha|php|pla|plp|sta|stx|sty|tax|tay|tsx|txa|txs|tya)\\b",
+            "name": "keyword.operator.asm",
+            "comment": "Load, store, and transfer instructions"
+        },
+
+        {
+            "match": "(\/\/|;)(\\s|\\S)*",
+            "name": "comment.line.asm",
+            "comment": "Comment line"
+        },
+
+        {
+            "begin": "(\/\\*)",
+            "end": "(\\*\/)",
+            "name": "comment.block.asm",
+            "comment": "C-style comment block (AVR ASM 2.0 only)"
+        },
+
+        {
+            "match": "(^|\\s)\"[\\w\\s\\W]*\"($|\\s)",
+            "name": "string.asm",
+            "comment": "Single-line string"
+        },
+
+        {
+            "match": "(^|\\s)\\'[\\w\\s\\W]*\\'($|\\s)",
+            "name": "string.asm",
+            "comment": "Single-line string"
+        },
+
+        {
+            "match": "(?i)\\b($(\\d|[A-F])+)\\b",
+            "name": "constant.numeric.asm",
+            "comment": "Hex number constant"
+        },
+
+        {
+            "match": "\\%(0b(0|1)+)\\b",
+            "name": "constant.numeric.asm",
+            "comment": "Bin number constant"
+        },
+
+        {
+            "match": "\\#^$^%(0|[1-9]\\d+)\\b",
+            "name": "constant.numeric.asm",
+            "comment": "Dec number constant"
+        }
+
+    ],
+
+    "uuid": "2d29de24-0f40-4855-a408-6fe8b3055153"
+}

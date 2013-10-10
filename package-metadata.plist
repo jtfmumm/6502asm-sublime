@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>description</key>
+	<string>6502 asm syntax definition for Sublime Text 2</string>
+	<key>url</key>
+	<string>https://github.com/jtfmumm/6502asm-sublime</string>
+	<key>version</key>
+	<string>0.1</string>
+</dict>
+</plist>

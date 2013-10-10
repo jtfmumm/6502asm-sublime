@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>asm</string>
+	</array>
+	<key>name</key>
+	<string>6502 asm</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Arithmetic and logic instruction mnemonics</string>
+			<key>match</key>
+			<string>(?i)\b(adc|and|asl|dec|dex|dey|eor|inc|inx|iny|lsr|ora|rol|ror|sbc)\b</string>
+			<key>name</key>
+			<string>keyword.operator.asm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Branch instruction mnemonics</string>
+			<key>match</key>
+			<string>(?i)\b(bcc|bcs|beq|bmi|bne|bpl|bvc|bvs|jmp|jsr|rti|rts)\b</string>
+			<key>name</key>
+			<string>keyword.operator.asm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Comparison instructions</string>
+			<key>match</key>
+			<string>(?i)\b(bit|cmp|cpx|cpy)\b</string>
+			<key>name</key>
+			<string>keyword.operator.asm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Flag setting instructions</string>
+			<key>match</key>
+			<string>(?i)\b(clc|cld|cli|clv|sec|sed|sei)\b</string>
+			<key>name</key>
+			<string>keyword.operator.asm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Load, store, and transfer instructions</string>
+			<key>match</key>
+			<string>(?i)\b(lda|ldx|ldy|pha|php|pla|plp|sta|stx|sty|tax|tay|tsx|txa|txs|tya)\b</string>
+			<key>name</key>
+			<string>keyword.operator.asm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Comment line</string>
+			<key>match</key>
+			<string>(//|;)(\s|\S)*</string>
+			<key>name</key>
+			<string>comment.line.asm</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(/\*)</string>
+			<key>comment</key>
+			<string>C-style comment block (AVR ASM 2.0 only)</string>
+			<key>end</key>
+			<string>(\*/)</string>
+			<key>name</key>
+			<string>comment.block.asm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Single-line string</string>
+			<key>match</key>
+			<string>(^|\s)"[\w\s\W]*"($|\s)</string>
+			<key>name</key>
+			<string>string.asm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Single-line string</string>
+			<key>match</key>
+			<string>(^|\s)\'[\w\s\W]*\'($|\s)</string>
+			<key>name</key>
+			<string>string.asm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Hex number constant</string>
+			<key>match</key>
+			<string>(?i)\b($(\d|[A-F])+)\b</string>
+			<key>name</key>
+			<string>constant.numeric.asm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Bin number constant</string>
+			<key>match</key>
+			<string>\%(0b(0|1)+)\b</string>
+			<key>name</key>
+			<string>constant.numeric.asm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Dec number constant</string>
+			<key>match</key>
+			<string>\#^$^%(0|[1-9]\d+)\b</string>
+			<key>name</key>
+			<string>constant.numeric.asm</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.asm</string>
+	<key>uuid</key>
+	<string>2d29de24-0f40-4855-a408-6fe8b3055153</string>
+</dict>
+</plist>

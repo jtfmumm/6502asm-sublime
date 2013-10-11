@@ -1,8 +1,8 @@
 {
-	"name": "6502 asm",
-	"scopeName": "source.asm",
-	"fileTypes": ["asm"],
-	"patterns": [
+    "name": "6502 asm",
+    "scopeName": "source.asm",
+    "fileTypes": ["asm"],
+    "patterns": [
  
         {
             "match": "(?i)\\b(adc|and|asl|dec|dex|dey|eor|inc|inx|iny|lsr|ora|rol|ror|sbc)\\b",
@@ -43,18 +43,18 @@
 
         {
             "match": "(?i)\\b([\\w|\\d]*)\\:",
-            "name": "string.asm",
+            "name": "support.class.asm",
             "comment": "Jump label"
         },
 
-    //    {
-    //        "match": "(?i)\\.([\\w|\\d]*)\\b",
-    //        "name": "variable.macro.asm",
-    //        "comment": "."
-    //    },    
+        {
+            "match": "(?i)\\.([\\w|\\d]*)\\b",
+            "name": "entity.name.function.asm",
+            "comment": "."
+        },    
     
         {
-            "match": "(^|\\s)\"[\\w\\s\\W]*\"($|\\s)",
+            "match": "(^|\\s)\"[\\w\\s\\W]*\"",
             "name": "string.asm",
             "comment": "Single-line string"
         },

@@ -64,13 +64,21 @@
 			<key>match</key>
 			<string>(?i)\b([\w|\d]*)\:</string>
 			<key>name</key>
-			<string>string.asm</string>
+			<string>support.class.asm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>.</string>
+			<key>match</key>
+			<string>(?i)\.([\w|\d]*)\b</string>
+			<key>name</key>
+			<string>entity.name.function.asm</string>
 		</dict>
 		<dict>
 			<key>comment</key>
 			<string>Single-line string</string>
 			<key>match</key>
-			<string>(^|\s)"[\w\s\W]*"($|\s)</string>
+			<string>(^|\s)"[\w\s\W]*"</string>
 			<key>name</key>
 			<string>string.asm</string>
 		</dict>

@@ -7,13 +7,13 @@
         {
             "match": "(?i)\\b(adc|and|asl|dec|dex|dey|eor|inc|inx|iny|lsr|ora|rol|ror|sbc)\\b",
             "name": "keyword.arithlogic.asm",
-            "comment": "Arithmetic and logic instruction mnemonics"
+            "comment": "Arithmetic and logic instructions"
         },
 
         { 
             "match": "(?i)\\b(bcc|bcs|beq|bmi|bne|bpl|bvc|bvs|jmp|jsr|rti|rts)\\b",
             "name": "keyword.branch.asm",
-            "comment": "Branch instruction mnemonics"
+            "comment": "Branch instructions"
         },
 
         { 
@@ -37,7 +37,7 @@
         {
             "match": "(\/\/|;)(\\s|\\S)*",
             "name": "comment.line.asm",
-            "comment": "Comment line"
+            "comment": "Comment"
         },
 
 
@@ -50,37 +50,37 @@
         {
             "match": "(?i)\\.([\\w|\\d]*)\\b",
             "name": "entity.name.function.asm",
-            "comment": "."
+            "comment": "Directives"
         },    
     
         {
             "match": "(^|\\s)\"[\\w\\s\\W]*\"",
             "name": "string.asm",
-            "comment": "Single-line string"
+            "comment": "String"
         },
 
         {
             "match": "(^|\\s)\\'[\\w\\s\\W]*\\'($|\\s)",
             "name": "string.asm",
-            "comment": "Single-line string"
+            "comment": "String"
         },
 
         {
             "match": "(?i)\\$((\\d|[A-F])+)\\b",
             "name": "constant.numeric.asm",
-            "comment": "Hex number constant"
+            "comment": "Hex number"
         },
 
         {
             "match": "(?i)\\%([0|1]+)\\b",
             "name": "constant.numeric.asm",
-            "comment": "Binary number constant"
+            "comment": "Binary number"
         },
 
         {
             "match": "(?i)\\#([0-9]+)\\b",
             "name": "constant.numeric.asm",
-            "comment": "Decimal number constant"
+            "comment": "Decimal number"
         }
 
     ],

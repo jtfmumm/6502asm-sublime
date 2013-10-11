@@ -12,7 +12,7 @@
 	<array>
 		<dict>
 			<key>comment</key>
-			<string>Arithmetic and logic instruction mnemonics</string>
+			<string>Arithmetic and logic instructions</string>
 			<key>match</key>
 			<string>(?i)\b(adc|and|asl|dec|dex|dey|eor|inc|inx|iny|lsr|ora|rol|ror|sbc)\b</string>
 			<key>name</key>
@@ -20,7 +20,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Branch instruction mnemonics</string>
+			<string>Branch instructions</string>
 			<key>match</key>
 			<string>(?i)\b(bcc|bcs|beq|bmi|bne|bpl|bvc|bvs|jmp|jsr|rti|rts)\b</string>
 			<key>name</key>
@@ -52,7 +52,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Comment line</string>
+			<string>Comment</string>
 			<key>match</key>
 			<string>(//|;)(\s|\S)*</string>
 			<key>name</key>
@@ -68,7 +68,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>.</string>
+			<string>Directives</string>
 			<key>match</key>
 			<string>(?i)\.([\w|\d]*)\b</string>
 			<key>name</key>
@@ -76,7 +76,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Single-line string</string>
+			<string>String</string>
 			<key>match</key>
 			<string>(^|\s)"[\w\s\W]*"</string>
 			<key>name</key>
@@ -84,7 +84,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Single-line string</string>
+			<string>String</string>
 			<key>match</key>
 			<string>(^|\s)\'[\w\s\W]*\'($|\s)</string>
 			<key>name</key>
@@ -92,7 +92,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Hex number constant</string>
+			<string>Hex number</string>
 			<key>match</key>
 			<string>(?i)\$((\d|[A-F])+)\b</string>
 			<key>name</key>
@@ -100,7 +100,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Binary number constant</string>
+			<string>Binary number</string>
 			<key>match</key>
 			<string>(?i)\%([0|1]+)\b</string>
 			<key>name</key>
@@ -108,7 +108,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Decimal number constant</string>
+			<string>Decimal number</string>
 			<key>match</key>
 			<string>(?i)\#([0-9]+)\b</string>
 			<key>name</key>

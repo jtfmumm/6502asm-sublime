@@ -60,6 +60,14 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Comment</string>
+			<key>match</key>
+			<string>(//|;)(\s|\S)*</string>
+			<key>name</key>
+			<string>comment.punctuation.definition.asm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Jump label</string>
 			<key>match</key>
 			<string>(?i)\b([\w|\d]*)\:</string>
@@ -110,7 +118,7 @@
 			<key>comment</key>
 			<string>Decimal number</string>
 			<key>match</key>
-			<string>(?i)\#([0-9]+)\b</string>
+			<string>(?i)\#([0-9a-f$%]+)\b</string>
 			<key>name</key>
 			<string>constant.numeric.asm</string>
 		</dict>

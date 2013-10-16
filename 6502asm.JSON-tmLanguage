@@ -40,6 +40,11 @@
             "comment": "Comment"
         },
 
+        {
+            "match": "(\/\/|;)(\\s|\\S)*",
+            "name": "comment.punctuation.definition.asm",
+            "comment": "Comment"
+        },
 
         {
             "match": "(?i)\\b([\\w|\\d]*)\\:",
@@ -78,7 +83,7 @@
         },
 
         {
-            "match": "(?i)\\#([0-9]+)\\b",
+            "match": "(?i)\\#([0-9a-f$%]+)\\b",
             "name": "constant.numeric.asm",
             "comment": "Decimal number"
         }

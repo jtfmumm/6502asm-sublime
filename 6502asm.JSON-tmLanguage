@@ -5,7 +5,7 @@
     "patterns": [
  
         {
-            "match": "(?i)\\b(adc|and|asl|dec|dex|dey|eor|inc|inx|iny|lsr|ora|rol|ror|sbc)\\b",
+            "match": "(?i)\\b(adc|and|asl|dec|dex|dey|eor|inc|inx|iny|lsr|ora|rol|ror|sbc|nop)\\b",
             "name": "keyword.arithlogic.asm",
             "comment": "Arithmetic and logic instructions"
         },
